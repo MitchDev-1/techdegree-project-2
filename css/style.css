@@ -9,111 +9,166 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
-	background-color: rgb(248, 248, 248);
-}
-
-h1 {
-	color: grey;
-}
-
-h2 {
+	background-color: rgb(221, 221, 221);
 	text-align: center;
-	font-size: 1.25em;
 }
 
 img {
 	max-width: 100%;
-	margin: 0;
 }
 
-.port {
-	text-align: center;
-	font-size: 1.5em;
-	padding-bottom: 30px;
+h2,
+h3,
+a {
+	color: #222222;
 }
 
-.project {
-	margin-top: 4em;
-	border: solid black 1px;
-	box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 1), 10px 10px 30px -10px rgba(0, 0, 0, 1);
-	border-radius: 10px;
+p {
+	font-size: .8em;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
 }
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
-/* ---- Navigation ---- */
-
-.name {
-	font-size: 1.25em;
-	text-align: center;
-	margin: 0;
-}
-
-.main-nav {
-	margin-top: 5px;
-}
-
-.name a,
-.main-nav a {
-	display: block;
-	text-align: center;
-	padding: 10px 15px;
-}
-
-.main-nav a {
-	font-size: .95em;
-	border: solid 2px rgb(243, 243, 243);
-	background-color: #fff;
-	color: #3acec2;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-.main-nav a:hover {
-	color: #093a58;
-}
-
 /* ---- Layout Containers ---- */
 
-.main-header {
-	text-align: center;
-	padding-top: .5em;
-	padding-bottom: .5em;
-	z-index: 10;
+.main-container {
+	margin-top: 0px;
+	margin-bottom: 50px;
 }
 
-.intro {
-	text-align: center;
-	padding: 1em;
-	border-bottom: solid 2px rgb(0, 0, 0, .1);
-}
-
-.container {
+#portfolio {
+	border-top: solid rgb(0, 0, 0, 0.2);
+	border-bottom: solid rgb(0, 0, 0, 0.2);
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-.main-content {
-	padding-top: 15px;
+.portfolio-list li {
+	padding-top: 3em;
 }
 
-.col {
-	text-align: center;
+/* ---- Navigation ---- */
+
+.name {
+	font-weight: 800;
 }
 
-.contact {
-	text-align: center;
-	margin-bottom: 3em;
-	margin-top: 3em;
-
-	padding-bottom: 1em;
-	border-bottom: solid 2px rgb(0, 0, 0, .1);
-	border-top: solid 2px rgb(0, 0, 0, .1);
+.main-nav li {
+	background-color: #eeeeee;
+	margin: 1em 2em;
 }
 
+.main-nav a {
+	text-transform: uppercase;
+	font-weight: 600;
+	display: block;
+	padding: 15px 15px;
+}
+
+a:hover {
+	color: rgb(37, 179, 143);
+}
 /* ---- Page Elements ---- */
+
+ul img {
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 1), 10px 10px 30px -10px rgba(0, 0, 0, 1);
+}
+
+/* ---- About ---- */
+
+.profile-pic {
+	max-width: 367px;
+}
+
+.about {
+	padding-top: 2em;
+	padding-bottom: 2em;
+	border-top: solid rgb(0, 0, 0, 0.2);
+}
+/* ---- Contacts ---- */
+
+/* ---- footer ---- */
+
+.main-footer {
+	border-top: solid rgb(0, 0, 0, 0.2);
+}
+
+.footer-nav {
+	margin: 1em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.footer-dsktop {
+	display: none;
+}
+
+.footer-name,
+.footer-mobile {
+	font-size: 1em;
+}
+
+.footer-name {
+	float: left;
+}
+
+.footer-mobile {
+	float: right;
+}
 
 /* ================================= 
   Media Queries
 ==================================== */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.main-nav li {
+		margin-left: 1px;
+		margin-right: 1px;
+		padding: 0 1px 0 1px;
+		display: inline-block;
+		background-color: inherit;
+	}
+
+	.main-nav {
+		float: right;
+		background-color: #fff;
+	}
+
+	.main-header {
+		background-color: #fff;
+		margin: 0 auto;
+	}
+
+	.name {
+		float: left;
+	}
+
+	.portfolio-list li {
+		float: left;
+		width: 46%;
+		margin: 1.6%;
+		font-size: .85em;
+	}
+}

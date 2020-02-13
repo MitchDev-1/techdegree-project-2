@@ -9,98 +9,96 @@
 
 </head>
 
-<body>
-    <header class="main-header"> 
-        <h1 class="name">Mitchell Matheny</h1>
-        <div class="container" >
-            <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <body>
+
+        <div id="home" class="main-container">
+            <header class="main-header clearfix">     
+                <nav class=" clearfix" >
+                    <h1 class="name">Mitchell Matheny</h1>
+                    <ul class="main-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+            
+            <div class="about container clearfix">
+                <img class="profile-pic clearfix" src="images/responsive-layout-profile.png" alt="placeholder">
+                <p>Here is a lot of words about me. yay Lot and lots of mored words and such. Did you know that words are considered words?</p>
+            </div>
         </div>
-    </header>
-    
-    <div class="intro">
+
+
+
+        <div id="portfolio" class="secondary contatiner">
+            <div class="portfolio container clearfix">
+                <h2>Portfolio</h2>
+                <ul class="portfolio-list ">
+                    <li>
+                        <img src="images/portfolio-1.png" alt="Project 1">
+                        <h3>Marketing</h3>
+                        <p>This project shows the home pages for a marketing website.</p>
+                    </li>
+                    <li>
+                        <img src="images/portfolio-2.png" alt="Project 2">
+                        <h3>Search Project</h3>
+                        <p>This project shows a the front page of a search engine</p>
+                    </li>
+                    <li>
+                        <img src="images/portfolio-3.png" alt="Project 3">
+                        <h3>Travel App</h3>
+                        <p>This project shows the fastest way to travel based on method of travel.</p>
+                    </li>
+                    <li>
+                        <img src="images/portfolio-4.png" alt="Project 4">
+                        <h3>Map of Favorite Places</h3>
+                        <p>This shows a map of my favorite places to be.</p>
+                    </li>
+                    <li>
+                        <img src="images/portfolio-5.png" alt="Project 5">
+                        <h3>Photo Galary</h3>
+                        <p>This shows the front page of a photo galary.</p>
+                    </li>
+                    <li>
+                        <img src="images/portfolio-6.png" alt="Project 6">
+                        <h3>Calculator</h3>
+                        <p>This shows the home page of a calculator app.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contact" class="main-container clearfix ">
+            <div class="contact container  ">
+                <h2>Contact</h2>
+                <p>If you wish to contact me, please use the information provided below.</p>
+                    <ul>
+                        <li>Phone: 666.345.2343</li>
+                        <li>Email: helloworld@code.com</li>
+                    </ul>
+            </div>
         
-        <img class="profile-pic" src="images/responsive-layout-profile.png" alt="placeholder">
-        <p>Here is a lot of words about me. yay Lot and lots of mored words and such. Did you know that words are considered words?</p>
-    </div>
 
-    <div class="container main-content">
-        <h1 class="port">Portfolio</h1>
-        <div class="left-col col">
-            <figure>
-                <img class="project" src="images/portfolio-1.png" alt="marketing">
-                <figcaption class= "captions">
-                    <h3>Marketing</h3>
-                    This is an example of where I could put a picture of a marketing website.
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="project" src="images/portfolio-2.png" alt="search">
-                <figcaption class= "captions">
-                    <h3>Search Page</h3>
-                    This is an example of where I could put a picture of a new seach engine.
-                </figcaption>
-            </figure>
+
+            <footer class="main-footer ">
+                <nav class="container " >
+                    <h1 class="footer-name">Mitchell Matheny</h1>
+
+                    <ul class="footer-nav footer-mobile">
+                        <li>
+                           <a href="#home">Back to top</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-nav footer-dsktop">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </footer>
         </div>
-
-        <div class="middle-col col">
-            <figure>
-                <img class="project" src="images/portfolio-3.png" alt="travel">
-                <figcaption class= "captions">
-                    <h3>Travel App</h3>
-                    This is an example of where I could put a picture of a Travel App.
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="project" src="images/portfolio-4.png" alt="locations">
-                <figcaption class= "captions">
-                    <h3>Favorite Locations</h3>
-                    This is an example of where I could put a picture of my Favorite Locations.
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="right-col col">
-            <figure>
-                <img class="project" src="images/portfolio-5.png" alt="Photo">
-                <figcaption class= "captions">    
-                    <h3>Photo Galary</h3>
-                    This is an example of where I could put a picture of my Photo Galary.
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="project" src="images/portfolio-6.png" alt="Calculator">
-                <figcaption class= "captions">
-                    <h3> Calculator</h3>
-                    This is an example of where I could put a picture of my Calculator.
-                </figcaption>
-            </figure>
-        </div>
-    </div>
-
-    <div class="container contact">
-        <h2>Contact</h2>
-        <p>If you wish to contact me, please use the information provided below.</p>
-            <ul>
-                <li>Phone: 666.345.2343</li>
-                <li>Email: helloworld@code.com</li>
-            </ul>
-    </div>
-
-
-    <footer class="main-footer">
-        <div class="container" >
-            <h1 class="name">Mitchell Matheny</h1>
-            <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-    </footer>
-</body>
+    
+    </body>
 </html>
