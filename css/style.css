@@ -1,0 +1,119 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+	background-color: rgb(248, 248, 248);
+}
+
+h1 {
+	color: grey;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+img {
+	max-width: 100%;
+	margin: 0;
+}
+
+.port {
+	text-align: center;
+	font-size: 1.5em;
+	padding-bottom: 30px;
+}
+
+.project {
+	margin-top: 4em;
+	border: solid black 1px;
+	box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 1), 10px 10px 30px -10px rgba(0, 0, 0, 1);
+	border-radius: 10px;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	text-align: center;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	border: solid 2px rgb(243, 243, 243);
+	background-color: #fff;
+	color: #3acec2;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	text-align: center;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	z-index: 10;
+}
+
+.intro {
+	text-align: center;
+	padding: 1em;
+	border-bottom: solid 2px rgb(0, 0, 0, .1);
+}
+
+.container {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-content {
+	padding-top: 15px;
+}
+
+.col {
+	text-align: center;
+}
+
+.contact {
+	text-align: center;
+	margin-bottom: 3em;
+	margin-top: 3em;
+
+	padding-bottom: 1em;
+	border-bottom: solid 2px rgb(0, 0, 0, .1);
+	border-top: solid 2px rgb(0, 0, 0, .1);
+}
+
+/* ---- Page Elements ---- */
+
+/* ================================= 
+  Media Queries
+==================================== */
