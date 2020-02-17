@@ -54,7 +54,9 @@ ul {
 }
 
 .portfolio-list li {
+	width: 100%;
 	padding-top: 3em;
+	display: inline-block;
 }
 
 /* ---- Navigation ---- */
@@ -142,20 +144,9 @@ ul img {
 		width: 95%;
 		margin: 0 auto;
 	}
-
-	.main-nav li {
-		margin-left: 1px;
-		margin-right: 1px;
-		padding: 0 1px 0 1px;
-		display: inline-block;
-		background-color: inherit;
+	.portfolio-list {
+		width: 100%;
 	}
-
-	.main-nav {
-		float: right;
-		background-color: #fff;
-	}
-
 	.main-header {
 		background-color: #fff;
 		margin: 0 auto;
@@ -165,10 +156,37 @@ ul img {
 		float: left;
 	}
 
+	.main-nav,
+	.main-nav li {
+		float: right;
+	}
+
 	.portfolio-list li {
-		float: left;
-		width: 46%;
-		margin: 1.6%;
+		width: 45%;
+		margin: 2%;
 		font-size: .85em;
+		display: inline-block;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		width: 85%;
+		max-width: 1150;
+	}
+
+	.portfolio-list {
+		width: 100%;
+		display: inline-block;
+	}
+
+	.portfolio-list li {
+		width: 28.333%;
+		display: inline-block;
+		font-size: .85em;
+	}
+
+	li p {
+		position: relative;
 	}
 }
